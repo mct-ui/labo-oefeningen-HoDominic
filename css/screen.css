@@ -479,6 +479,18 @@ a:focus {
     text-transform: uppercase;
     box-shadow: 0px 0px 10px 1px rgba(17,149,255,1)
 }
+
+
+.c-link-cta2{
+    Line-height: 0px;
+    text-decoration: none;
+    padding: 18px 18px 18px 18px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #033aa7, #0e43b2, #164cbc, #1e55c7, #245ed2);
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 1px rgba(17,149,255,1)
+
+}
 /*
     Component: header
     ---
@@ -520,6 +532,17 @@ a:focus {
     display:block ;
     padding: 8px 0;
     
+}
+@media (min-width: 992px) {
+    .c-nav__list {
+        display: flex;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .c-nav__link {
+        padding: 8px 16px;
+    }
 }
 
 /*@media (min-width: 992px) {
