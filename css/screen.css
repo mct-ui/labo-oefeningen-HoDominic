@@ -4,21 +4,21 @@
 
 
 @font-face {
-    font-family: "ClearSans-Light";
+    font-family: "ClearSans-Web";
     font-weight: 200;
     src: url("../fonts/ClearSans-Light-webfont.woff2") format("woff2"),
          url("../fonts/ClearSans-Light-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: "HK Grotesk Web";
+    font-family: "ClearSans-Web";
     font-weight: 400;
     src: url("../fonts/ClearSans-Regular-webfont.woff2") format("woff2"),
          url("../fonts/ClearSans-Regular-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: "HK Grotesk Web";
+    font-family: "ClearSans-Web";
     font-weight: 600;
     src: url("../fonts/ClearSans-Medium-webfont.woff2") format("woff2"),
          url("../fonts/ClearSans-Medium-webfont.woff") format("woff");
@@ -37,7 +37,7 @@
 html {
     font-size: 18px;
     line-height: 32px;
-    font-family: Helvetica, arial, sans-serif;
+    font-family: "ClearSans-Web",Helvetica, arial, sans-serif;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -426,9 +426,21 @@ a:focus {
 }
 
 .c-lead--xxl {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 40px;
     color: #FFFFFF;
+    font-weight: bold;
+}
+
+.c-link-cta{
+    Display: inline-block;
+    Line-height: 24px;
+    text-decoration: none;
+    padding: 18px 18px 18px 18px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #033aa7, #0e43b2, #164cbc, #1e55c7, #245ed2);
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 1px rgba(17,149,255,1)
 }
 /*
     Component: header
