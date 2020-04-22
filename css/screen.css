@@ -431,6 +431,43 @@ a:focus {
     color: #FFFFFF;
     font-weight: bold;
 }
+/*
+    Component: figure
+    ---
+    Special type of figure and figcaption
+*/
+
+.c-figure {
+    position: relative;
+}
+
+.c-figure__caption {
+    line-height: 15px;
+    margin-top: 8px;
+    padding-left: 6px;
+    padding-top: 1px;
+    border: 2px solid #5051DB;
+    border-width: 0 0 0 2px;
+}
+
+@media (min-width: 768px) {
+    .c-figure__caption--absolute {
+        position: absolute;
+        top: 70px;
+        right: 200px;
+        margin-right: 8px;
+        text-align: right;
+        background-color: #fff;
+        padding: 16px;
+        max-width: 260px;
+        border-width: 0 4px 0 0;
+    }
+}
+/*
+    Component: header
+    ---
+    Call-to-action button
+*/
 
 .c-link-cta{
     Display: inline-block;
@@ -781,6 +818,11 @@ a:focus {
     .u-5-of-6-bp4 {
         flex-basis: calc(100% / 6 * 5) !important;
     }
+}
+
+.laatste-afbeelding{
+    display: block;
+    margin-left: 10%;
 }
 
 /*------------------------------------*\
