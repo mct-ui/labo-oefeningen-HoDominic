@@ -178,7 +178,9 @@ a:visited,
 a:active,
 a:hover,
 a:focus {
-    color: #8EC7FF;
+    color:#DBEDFF;
+    text-shadow: 2px 2px 8px #8EC7FF;
+    
 }
 
 /*------------------------------------*\
@@ -229,7 +231,7 @@ a:focus {
 .o-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 56.4em; /* 56.4 * 20px = 1128px */
+    max-width: 71em; /* 71px*18(font-size) = 1278px */
 }
 
 /*
@@ -391,8 +393,85 @@ a:focus {
 
 .c-logo{
     height: 32px;
+    display: flex;
+    align-items: center;
 }
 
+.c-logo__symbol {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .c-logo {
+        height: 40px;
+    }
+}
+
+
+
+
+
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.c-header__nav {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+    
+
+
+
+
+/*
+    Component: nav
+    ---
+    Main nav of the website
+*/
+
+.c-nav {
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+
+.c-nav__link {
+    text-decoration: none;
+    font-weight: 400;
+    /*display:block */
+    padding: 8px 0;
+    
+}
+
+/*@media (min-width: 992px) {
+    .c-header__nav {
+        display: block;
+    }
+
+    .c-header__nav--main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 12px;
+    }
+
+    .c-header__mobile-nav-trigger {
+        display: none;
+    }
+}
+*/
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
@@ -723,9 +802,14 @@ a:focus {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+    a:link{
+        text-decoration: none;
+        
+    }
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
+       
     }
     a[href]:after {
         content: " (" attr(href) ")";
