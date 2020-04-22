@@ -449,7 +449,7 @@ a:focus {
 .c-nav__link {
     text-decoration: none;
     font-weight: 400;
-    /*display:block */
+    display:block ;
     padding: 8px 0;
     
 }
